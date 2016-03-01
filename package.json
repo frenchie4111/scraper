@@ -1,0 +1,17 @@
+{
+  "name": "scraper",
+  "version": "1.0.0",
+  "description": "Web scraper that takes data definition as json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scraper",
+    "nodejs",
+    "web",
+    "json"
+  ],
+  "author": "Mike Lyons <mdl0394@gmail.com>",
+  "license": "MIT"
+}
