@@ -13,5 +13,8 @@
     "json"
   ],
   "author": "Mike Lyons <mdl0394@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
 }
