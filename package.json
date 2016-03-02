@@ -15,6 +15,10 @@
   "author": "Mike Lyons <mdl0394@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "cheerio": "^0.20.0",
+    "load-from-directory": "^1.0.2",
+    "q": "^1.4.1",
+    "request": "^2.69.0",
     "underscore": "^1.8.3"
   }
 }
