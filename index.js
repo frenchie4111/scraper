@@ -1,4 +1,5 @@
-var ScraperTree = require( './lib/ScraperTree' );
+var ScraperTree = require( './lib/ScraperTree' ),
+    ResultParser = require( './lib/ResultParser' );
 
 var context = {};
 
@@ -39,11 +40,14 @@ var hackernews_head_node = new ScraperTree.PageNode( context, 'listing_page', [
 ] );
 
 
-hackernews_head_node
-// .start( [], 'http://mikelyons.org/' )
-    .start( [], 'https://news.ycombinator.com/' )
+// hackernews_head_node
+// .start( [], 'https://news.ycombinator.com/' )
+mikelyons_head_node
+    .start( [], 'http://mikelyons.org/' )
     .then( ( result ) => {
-        console.log( JSON.stringify( result, null, 4 ) );
+        console.log( JSON.stringify( ResultParser.parse( result ), null, 4 ) );
+
+        // console.log( JSON.stringify( result, null, 4 ) );
     } )
     .catch( ( err ) => {
         console.error( err );
